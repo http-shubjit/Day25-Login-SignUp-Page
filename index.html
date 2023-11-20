@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   
+</head>
+<body>
+<div class="hero">
+    <nav>
+        <img src="logo.png" alt="" class="logo">
+        <ul>
+            <li> <a href="">Skills</a></li>
+            <li><a href="">Open Source</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Achivements</a></li>
+            <li><a href="">Contact Me</a></li>
+        </ul>
+        <img src="moon.png" alt="" id="icon">
+       
+    </nav>
+    <div class="info">
+        <h1>Hiii I Am  <span>Kate</span> </h1>
+        <p>This is my official portfolio website to shoe case my
+            all works related to <br> web devlopement and app devlopement
+        </p>
+        <a href="">CONTACT ME</a>
+        <a href="">SEE MY RESUME</a>
+    </div>
+    <div class="imgbox">
+        <img src="pattern.png" alt="" class="back">
+        <img src="girl.png" alt="" class="main">
+    </div>
+    <div class="sociallink">
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+    </div>
+
+</div>
+
+<script>
+    var icon=document.getElementById("icon")
+    icon.onclick=function(){
+        document.body.classList.toggle("darktheme")
+        if(document.body.classList.contains("darktheme")){
+           icon.src="sun.png" 
+        }
+        else{
+            icon.src="moon.png" 
+        }
+    }
+</script>
+</body>
+</html>
